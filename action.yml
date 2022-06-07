@@ -1,0 +1,16 @@
+# action.yml
+name: 'Ajay-o-s'
+description: 'Docker file for kali-web-terminal'
+inputs:
+  who-to-greet:  'ajay o s'
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time: '00:52'
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}

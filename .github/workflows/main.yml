@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Docker file to open kali terminal in web
         id: hello
-        uses: Ajay-o-s/Kali-linux-web-docker@v1
+        uses: Ajay-o-s/Kali-linux-web@v2
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step

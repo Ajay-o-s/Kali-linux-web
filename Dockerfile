@@ -4,7 +4,7 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y openssh-server
 
 ENV DEBIAN_FRONTEND=noninteractive
-
+.github/workflows/
 RUN apt-get install -y xfce4
 RUN apt-get install -y fakechroot
 RUN apt-get install -y --no-install-recommends build-essential cmake git libjson-c-dev libwebsockets-dev

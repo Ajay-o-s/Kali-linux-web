@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Docker file to open kali terminal in web
+    steps:
+      - name: Docker file to open kali terminal in web
+        id: hello
+        uses: Ajay-o-s/Kali-linux-web-docker@v1
+        with:
+          who-to-greet: 'Mona the Octocat'
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}"

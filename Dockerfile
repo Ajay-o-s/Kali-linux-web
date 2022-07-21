@@ -10,7 +10,7 @@ RUN apt-get install -y --no-install-recommends build-essential cmake git libjson
 RUN apt-get install -y npm
 RUN apt-get install -y cmatrix
 RUN apt-get install -y rsync
-RUN apt-get install -y python
+RUN apt-get install -y python3
 RUN apt-get install -y sudo
 RUN apt-get install -y fakeroot
 RUN apt-get install -y neofetch
